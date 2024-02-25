@@ -1,0 +1,144 @@
+:root{
+    --color : #dfdfe2;
+    --bgColor: #0a0a23;
+    --cashierColor : #99c9ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+background-color: var(--bgColor);
+}
+main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main__h1{
+  font-size: 35px;
+  color: var(--color);
+  letter-spacing: 1.9px;
+  text-align: center;
+  font-weight: 100;
+}
+.main__p{
+    padding-top: 20px;
+    text-align: center;
+    color: var(--color);
+    font-size: 40px;
+}
+
+.input__section{
+    display: block;
+    width: 400px;
+    text-align: center;
+    margin: 30px auto;
+}
+label{
+    font-size: 20px;
+    color: var(--color);
+}
+input{
+    width: 200px;
+    margin-top: 10px;
+    padding: 5px 0 5px 20px;
+}
+#purchase-btn{
+    font-size: 20px;
+    padding: 0 10px;
+    margin : 10px 0;
+    border-width: 2px;
+    border-color: yellow;
+    background-image: linear-gradient(rgb(108, 108, 72) , rgb(201, 201, 34)) ;
+    cursor: pointer;
+    font-weight: 800;
+}
+.input__wrapper{
+    margin: 0 auto;
+    width: 300px;
+}
+.container__cashier{
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+}
+.cashier__total__div{
+    width: 170px;
+    margin: 0 auto; 
+    border: 10px solid var(--cashierColor);
+    
+}
+.total__div__p{
+    font-size: 21px;
+    padding: 12px;
+    background-color: black;
+    color: var(--color);
+}
+.connector{
+    width: 40px;
+    height: 30px;
+    background-color: var(--cashierColor);
+    position: absolute;
+    top: 70;
+    left : 150px
+}
+.body__cashier{
+    width : 400px;
+    background-color: var(--cashierColor);
+    border-radius: 10% 10% 0 0 ;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.body__cashier__left__side{
+
+    display: grid;
+    row-gap: 1px;
+    column-gap: 1px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: 100px;
+    width: 100px;
+  
+}
+.body__cashier__left__side > div {
+  background-color: black;
+  border-radius: 3px;
+ }
+ .body__cashier__ul{
+    list-style: none;
+ }
+ .body__cashier__li , .body__cashier__right__side > h5{
+    font-size: 17px;
+ }
+
+ .footer__section{
+    width: 400px;
+    background-color: var(--cashierColor);
+    margin: 20px auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .black__dot{
+    width: 20px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 50%;
+ }
+ #change-due{
+    width : 400px;
+    height: 20px;
+    margin: 20px auto;
+    display: none;
+    font-size: 20px;
+    color:var(--color);
+    padding:10px 0;
+    text-align: center;
+ }
+ 
